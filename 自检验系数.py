@@ -79,6 +79,6 @@ y_pre = regr.predict(X)
 num = (1-np.sum((y-y_pre)**2)/np.sum((y-y_mean)**2))
 
                 
-print(num)
+print('经验参数自检验结果：',num)
 file.close()
 file_2.close() 

@@ -82,8 +82,7 @@ for train_index, test_index in loo.split(X):
                 
                 YPred[test_index] = y_pre         
 num = (1-np.sum((y-YPred)**2)/np.sum((y-y_mean)**2))
-Q2 = num
-                
-print(num)
+Q2 = num                
+print('经验参数留一法交叉验证结果：',num)
 file.close()
 file_2.close() 
