@@ -66,10 +66,14 @@ for i in range(number):
     if line[i*4+1:i*4+3] in all_data:
         data_2[i,all_data.index(line[i*4+1:i*4+3])] = 1  
 X = np.c_[X,data_1,data_2]
-y_mean = np.full((1,number), np.sum(y)/number)             
-regr = svm.SVR(kernel ='rbf',degree = 3,gamma =0.00390625,coef0 = 0.0,
-		tol = 0.001,C = 64,epsilon = 0.03125,shrinking = True,cache_size = 40,		
-		verbose = False,max_iter = -1)       
+y_mean = np.full((1,number), np.sum(y)/number)
+c = input('优化C值：')  
+p = input('优化epsilon:')
+g = input('优化gamma：') 
+        
+regr = svm.SVR(kernel ='rbf', degree = 3, gamma = float(g),coef0 = 0.0,
+		tol = 0.001, C = float(c), epsilon = float(p), shrinking = True, cache_size = 40,		
+		verbose = False, max_iter = -1)       
 regr.fit(X,y)            
 y_pre = regr.predict(X)
                 
@@ -77,6 +81,6 @@ y_pre = regr.predict(X)
 num = (1-np.sum((y-y_pre)**2)/np.sum((y-y_mean)**2))
 
                 
-print('经验参数自检验结果：',num)
+print('优化参数自检验结果：',num)
 file.close()
 file_2.close() 

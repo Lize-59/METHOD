@@ -94,7 +94,7 @@ for a in range(-1,7):
             Q2[count][1] = p
             Q2[count][2] = g
             Q2[count][3] = num            
-new = Q2[np.argsort(Q2[:,3])]#在Q2结果的最后一行依次是C，epsilon，gamma优化值，最后一列为交叉验证结果。 
+new = Q2[np.argsort(Q2[:,3])]
 print('优化后最高Q2：',num)
 print('最优C值：{}，最优epsilon值：{}，最优gamma值：{}'.format(c,p,g))
 file.close()
