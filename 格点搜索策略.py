@@ -96,7 +96,7 @@ for a in range(-1,7):
             Q2[count][3] = num            
 new = Q2[np.argsort(Q2[:,3])]
 print('优化后最高Q2：',num)
-print('最优C值：{}，最优epsilon值：{}，最优gamma值：{}'.format(c,p,g))
+print('最优C值：{}，最优epsilon值：{}，最优gamma值：{}'.format(new[-1,0], new[-1,1],new[-1,2]))
 file.close()
 file_2.close()           
 
