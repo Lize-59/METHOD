@@ -67,8 +67,8 @@ for i in range(number):
         data_2[i,all_data.index(line[i*4+1:i*4+3])] = 1  
 X = np.c_[X,data_1,data_2]
 y_mean = np.full((1,number), np.sum(y)/number)             
-regr = svm.SVR(kernel ='rbf',degree = 3,gamma =0.00390625,coef0 = 0.0,
-		tol = 0.001,C = 64,epsilon = 0.03125,shrinking = True,cache_size = 40,		
+regr = svm.SVR(kernel ='rbf',degree = 3,gamma =0.0625,coef0 = 0.0,
+		tol = 0.001,C = 16.0,epsilon = 0.001,shrinking = True,cache_size = 40,		
 		verbose = False,max_iter = -1)       
 regr.fit(X,y)            
 y_pre = regr.predict(X)
