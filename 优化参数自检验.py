@@ -68,8 +68,8 @@ for i in range(number):
 X = np.c_[X,data_1,data_2]
 y_mean = np.full((1,number), np.sum(y)/number)
 c = input('优化C值：')  
-p = input('优化epsilon:')
-g = input('优化gamma：') 
+p = input('优化epsilon值:')
+g = input('优化gamma值：') 
         
 regr = svm.SVR(kernel ='rbf', degree = 3, gamma = float(g),coef0 = 0.0,
 		tol = 0.001, C = float(c), epsilon = float(p), shrinking = True, cache_size = 40,		
