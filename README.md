@@ -9,8 +9,8 @@
 
 [2] UNO S, KODAMA D, YUKAWA H, et al. Quantitative analysis of the relationship between structure and antioxidant activity of tripeptides[J]. J Pept Sci, 2020, 26(3): 4-5.
 
-[3] DENG B, LONG H, TANG T, et al. Quantitative structure-activity relationship study of antioxidant tripeptides based on model population analysis[J]. Mol Sci, 2019, 20(4): 1-14.
+[3] Chen N, Chen J, Yao B, et al. QSAR Study on Antioxidant Tripeptides and the Antioxidant Activity of the Designed Tripeptides in Free Radical Systems[J]. Molecules, 2018, 23(6):1407
 
-[4] Chen N, Chen J, Yao B, et al. QSAR Study on Antioxidant Tripeptides and the Antioxidant Activity of the Designed Tripeptides in Free Radical Systems[J]. Molecules, 2018, 23(6):1407
+[4] Toropova A P, Toropov A A, Roncaglioni A, et al. The index of ideality of correlation improves the predictive potential of models of the antioxidant activity of tripeptides from frog skin (Litoria rubella)[J]. Comput Biol Med. 2021 Jun;133:104370.
 
-[5] Toropova A P, Toropov A A, Roncaglioni A, et al. The index of ideality of correlation improves the predictive potential of models of the antioxidant activity of tripeptides from frog skin (Litoria rubella)[J]. Comput Biol Med. 2021 Jun;133:104370.
+[5] DENG B, LONG H, TANG T, et al. Quantitative structure-activity relationship study of antioxidant tripeptides based on model population analysis[J]. Mol Sci, 2019, 20(4): 1-14.
